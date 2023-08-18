@@ -1,7 +1,8 @@
-version: '3.9'
+version: '3'
 
 services:
-  web:
-    image: "trainwithshubham/node-app-test-new:latest"
+  backend:
+    build:
+      context: .
     ports:
       - "8000:8000"
